@@ -17,14 +17,15 @@
     >
       Password
     </ra-input-field>
-    <ra-button name="submit">
+    <ra-button name="submit" color="green white--text">
       Login
     </ra-button>
   </ra-form>
 </template>
 
 <script>
-import RaLoginCard from './login-card'
+import RaLoginCard from "./login-card";
 
-export default RaLoginCard
+export default RaLoginCard;
 </script>
+
