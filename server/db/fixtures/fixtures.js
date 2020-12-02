@@ -9,7 +9,7 @@ var fixtures = [
         "model": "user",
         "data": {
             "username": "root",
-            "password": "$2b$10$ifTvgzVklT5/5E5quyaTheIycRl2hoMHvQemIyjeYxtvlMnZVFc62",
+            "password": "$2b$10$GM.f/0LSmcCgMiBoWkNtKuk.fiw50PYl81r5d1Aflk.5.Y.W.aITq", //test123
         }
     }
 ];
