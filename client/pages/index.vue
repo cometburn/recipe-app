@@ -22,8 +22,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-
-import RaLoginCard from "~/components/organisms/ra-login-card/index.vue";
+import RaLoginCard from "~/client/components/organisms/ra-login-card/index.vue";
 
 export default Vue.extend({
     name: "LoginPage",
