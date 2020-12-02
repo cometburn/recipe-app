@@ -1,24 +1,25 @@
 <template>
-  <input
+  <v-text-field
     :id="id"
     :type="type"
     :name="name"
-    class="ra-input"
+    class="ra-input mt-0 pt-0"
     :placeholder="placeholder"
     :disabled="disabled"
     :required="required"
-    @input="$emit('input', $event.target.value)"
-  >
+    autocomplete=""
+    block
+  ></v-text-field>
 </template>
 
 <script>
-import RaInput from './input'
+import RaInput from "./input";
 
-export default RaInput
+export default RaInput;
 </script>
 
 <style scoped>
 .ra-input {
-  border: 1px solid #AAAAAA;
+    /* border: 1px solid #aaaaaa; */
 }
 </style>
