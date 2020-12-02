@@ -7,21 +7,23 @@ import {
 
 const api = "/"
 
+const state = {}
+
 const actions = {
-    [AUTH_LOGIN]: user => {
+    [AUTH_LOGIN]: () => {
         return new Promise((resolve, reject) => {
-            axios
-                .post(api + "auth", user)
-                .then(res => {
-                    commit("setStorage", res.data);
-                    resolve(res);
-                })
-                .catch(err => {
-                    reject(err);
-                });
+            // axios
+            //     .post(api + "auth", user)
+            //     .then(res => {
+            //         // commit("setStorage", res.data);
+            //         resolve(res);
+            //     })
+            //     .catch(err => {
+            //         reject(err);
+            //     });
         });
     },
-    [AUTH_LOGOUT]: state => {
+    [AUTH_LOGOUT]: () => {
         console.log(state)
         // localStorage.removeItem("_secure__ls__metadata");
         // localStorage.removeItem("vuex");
@@ -30,8 +32,5 @@ const actions = {
 
 export default {
     state,
-    setters,
-    getters,
     actions,
-    mutations
 };
