@@ -1,23 +1,24 @@
 <template>
-  <button
+  <v-btn
     :name="name"
     :type="type"
+    :color="color"
+    :block="block"
     class="ra-button"
+
   >
     <slot />
-  </button>
+  </v-btn>
 </template>
 
 <script>
-import RaButton from './button'
+import RaButton from "./button";
 
-export default RaButton
+export default RaButton;
 </script>
 
 <style scoped>
 .ra-button {
-  background-color: green;
-  color: #FFFFFF;
-  padding: 1rem;
+    padding: 1rem;
 }
 </style>

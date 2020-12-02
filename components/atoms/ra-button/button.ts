@@ -10,10 +10,22 @@ const type = {
   default: 'submit'
 }
 
+const color = {
+  type: String,
+  default: 'primary'
+}
+
+const block = {
+  type: Boolean,
+  default: true
+}
+
 export default Vue.extend({
   name: 'RaButton',
   props: {
     name,
-    type
+    type,
+    color,
+    block
   }
 })
