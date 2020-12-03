@@ -5,7 +5,6 @@
     :color="color"
     :block="block"
     class="ra-button"
-
   >
     <slot />
   </v-btn>

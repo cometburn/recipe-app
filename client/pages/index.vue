@@ -22,7 +22,9 @@
 
 <script lang="ts">
 import Vue from "vue";
-import RaLoginCard from "~/client/components/organisms/ra-login-card/index.vue";
+import axios from "axios";
+import RaLoginCard from "~/components/organisms/ra-login-card/index.vue";
+import Api from "@/utils/api";
 
 export default Vue.extend({
     name: "LoginPage",
@@ -30,12 +32,17 @@ export default Vue.extend({
         RaLoginCard,
     },
     methods: {
-        authenticate(): void {
-            // TODO
+        async authenticate() {
+            console.log("test2");
+            // const response = await axios;
+            // .post(Api.url + "auth/login", {
+            //     username: "",
+            //     password: "",
+            // })
+            // .catch((error) => {
+            //     console.log(error.response.data);
+            // });
         },
     },
-    data: () => ({
-        justify: false,
-    }),
 });
 </script>

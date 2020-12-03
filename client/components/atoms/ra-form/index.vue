@@ -4,14 +4,14 @@
     :name="name"
     :action="action"
     :method="method"
-    @submit="submit"
+    @submit.prevent="submit"
   >
     <slot />
   </form>
 </template>
 
 <script>
-import RaForm from './form'
+import RaForm from "./form";
 
-export default RaForm
+export default RaForm;
 </script>

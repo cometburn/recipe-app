@@ -5,7 +5,8 @@ module.exports = {
         "password": "Ux7uSBIM6nKV6_nfZQR2Xkr7oyKdcFfF",
         "database": "xxwvsuao",
         "host": "arjuna.db.elephantsql.com",
-        "dialect": "postgres"
+        "dialect": "postgres",
+        "logging": false,
     },
     "test": {
         "username": "root",

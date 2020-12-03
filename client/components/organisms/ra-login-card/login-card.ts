@@ -11,7 +11,8 @@ export default Vue.extend({
     RaInputField
   },
   methods: {
-    authenticate (): void {
+    authenticate(): void {
+      console.log('test')
       this.$emit('submit')
     }
   }

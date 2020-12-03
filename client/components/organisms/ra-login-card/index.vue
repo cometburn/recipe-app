@@ -1,9 +1,10 @@
 <template>
-  <ra-form id="login" name="login" @submit="authenticate">
+  <ra-form id="login" name="login" @submit.prevent="authenticate">
     <ra-input-field
       id="email"
       type="email"
       name="email"
+
       placeholder="Enter email address"
     >
       Email Address
@@ -13,11 +14,12 @@
       id="password"
       type="password"
       name="password"
+
       placeholder="Enter password"
     >
       Password
     </ra-input-field>
-    <ra-button name="submit" color="green white--text">
+    <ra-button type="submit" name="submit" color="green white--text">
       Login
     </ra-button>
   </ra-form>
